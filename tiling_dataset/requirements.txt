@@ -1,0 +1,8 @@
+numpy
+tqdm
+pandas
+Shapely
+rasterio
+opencv-python
+matplotlib
+PyYAML
