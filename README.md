@@ -255,8 +255,11 @@ On obtient à la fin un dossier contenant :
 Dans cette partie nous allons évaluer les performances de notre modèle avec le jupyter notebook dans le dossier metrics. 
 Il faut ainsi lancer la commande suivante en modifiant les chemins : 
 predictions_dir : chemin vers les fichier labels des prédictions à évaluer
+
 gt1_dir : chemin vers annotation évidente (celle qui va servir à déterminer les TP et FN)
+
 gt2_dir : chemin vers annotation complète (celle qui va servir à déterminer les FP)
+
 iou_threshold : valeurs limites de recouvrement pour évaluer correspondance entre predictions et annotations (modifier les valeurs si besoin. + les valeurs sont grandes, + exigeant sur précision des bbox) 
 
 ```bash
@@ -281,6 +284,7 @@ multi_grape_time_series_data : fichier qui contient les données pour tracer les
                                                                                                                                                                   
 
                     
+
 
 
 
