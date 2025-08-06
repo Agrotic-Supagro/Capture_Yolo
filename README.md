@@ -196,28 +196,47 @@ main_eval_iou 0.2 : si IoU>0.2 (intersection over union) alors prédiction corre
 main_model_size : Taille des images en entrée du main_model
 
 main_model_iou : filtre nms, supprime les bbox qui se chevauchent iou > main_model_iou en faisant l'inférence du modèle sur l'image
+
 main_model_conf :  filtre à partir duquel une prédiction est gardée (baisser la confiance augmente le nombre de prédictions)
 
+
 bbox_model : chemin vers modèle entraîné sur les bbox pour utiliser approche temporelle (facultatif)
+
 memory_window : nombre d'images précédentes avec lequel les prédictions du modèle main sont comparées
+
 bbox_eval_iou : pareil que main_eval_iou
+
 expansion_factor : facteur d'agrandissement des bbox détectées par main model et qui seront données à manger au bbox_model (donner + de contexte pour regarder un peu autour)
+
 target size : taille des bboxs après agrandissement en faisaint cv2.resize
+
 bbox_model_iou : même que main_model_iou
+
 bbox_model_size : taille des images en entrée du bbox_model (taille finale des bbox, donc après expansion factor qui seront données en entrée du modèle)
+
 bbox_model_conf : même chose que main_model_conf
 
+
 use_sahi : utiliser le tiling pour l'inférence (donner les poids du modèle tiled dans l'argument : main_model)
+
 slice_height : hauteur des tiles
+
 slice_width : largeur des tiles
+
 overlap_height/width_ratio : recouvrement sur la hauteur/largeur
+
 
 global_iou_threshold : eviter les chevauchement de prédictions entre les prédictions au seins de même modèle ou intermodèle (+ il est petit, + il est restrictif)
 
+
 output : chemin de sauvegarde de l'inférence
+
 no_vis : pas de sauvegarde des images avec bbox
+
 no_crops : éviter sauvegarde des bbox prédites
+
 ground_truth_folder : chemin vers vérité terrain pour visualiser en mode évaluation (dans le dossier visualisation, bbox de couleurs diff si vraies ou non et apparition des vraies bbox)
+
 ignore_class_mismatch : ignorer la classe prédite pour le mode évaluation
 
 ```bash
@@ -262,5 +281,6 @@ multi_grape_time_series_data : fichier qui contient les données pour tracer les
                                                                                                                                                                   
 
                     
+
 
 
