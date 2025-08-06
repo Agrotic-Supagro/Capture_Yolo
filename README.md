@@ -190,8 +190,11 @@ Après avoir regardé les différents graphs de l'entraînement réalisé, nous 
 folder : jeu de données sur lequel on fait l'inférence
 
 main_model : chemin vers les poids du modèle entraîné
+
 main_eval_iou 0.2 : si IoU>0.2 (intersection over union) alors prédiction correcte sur visualisation en mode évaluation
+
 main_model_size : Taille des images en entrée du main_model
+
 main_model_iou : filtre nms, supprime les bbox qui se chevauchent iou > main_model_iou en faisant l'inférence du modèle sur l'image
 main_model_conf :  filtre à partir duquel une prédiction est gardée (baisser la confiance augmente le nombre de prédictions)
 
@@ -259,4 +262,5 @@ multi_grape_time_series_data : fichier qui contient les données pour tracer les
                                                                                                                                                                   
 
                     
+
 
