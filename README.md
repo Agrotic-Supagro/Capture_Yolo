@@ -1,5 +1,10 @@
 # Yolo
 
+## Annotation avec CVAT
+
+L'annotation se fait avec la plateforme https://www.cvat.ai/
+
+
 ## Installation des paquets
 
 Utiliser [pip](https://pip.pypa.io/en/stable/) pour installer les paquets nécessaires
@@ -284,6 +289,7 @@ multi_grape_time_series_data : fichier qui contient les données pour tracer les
                                                                                                                                                                   
 
                     
+
 
 
 
