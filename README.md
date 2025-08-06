@@ -40,7 +40,7 @@ python ./tests/test_yolo_tiler.py
 ## Créer le crop dataset
 
 Le crop dataset va nous permettre d'entraîner un autre yolo pour utiliser une approche temporelle. 
-Il faut modifier le fichier ./crop_dataset/tests/test_yolo_tiler.py
+Il faut modifier le fichier ./crop_dataset/grape_crop_generator.py
 Il faut modifier les chemins d'input et sortie. On lui donne les dossiers individuellement. Il va crop le dossier en entrée
 Il va prendre les images et les labels et découper les bbox présentes dans la labelisation pour obtenir les bbox en image en y ajoutant ou non une expansion pour prendre plus de contexte. 
 On peut également lui demander une proportion de bbox sans objet labelisé. (Conseillé pour l'apprentissage de nos modèles de détection pour comprendre différence background/objet) 
@@ -62,7 +62,7 @@ if __name__ == "__main__":
 
 ```bash
 cd crop_dataset
-python ./tests/test_yolo_tiler.py
+python grape_crop_generator.py
 ```
 
 ## Entraînement du modèle
@@ -257,4 +257,5 @@ individual_grape_charts : courbes pour chaque id de grappe
 masks : sauvegarde des masques de segmentation par id 
 multi_grape_time_series_data : fichier qui contient les données pour tracer les graphs
                                                                                                                                                                   
+
                     
