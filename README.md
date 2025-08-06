@@ -112,7 +112,7 @@ Créer un environnement virtuel et installer les paquets nécessaires
 ```bash
 module load cray-python
 python3.11 -m venv nom_env
-source amd_ultra/bin/activate
+source nom_env/bin/activate
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm6.2.4
 pip install ultralytics
 ```
@@ -259,3 +259,4 @@ multi_grape_time_series_data : fichier qui contient les données pour tracer les
                                                                                                                                                                   
 
                     
+
